@@ -21,77 +21,100 @@ body{
 .container{
   max-width:480px;
   margin:auto;
-  min-height:100vh;
 }
 
 .hero{
-  background:linear-gradient(135deg,#2d2420,#6f5547);
+  background:#4b382f;
   color:white;
-  padding:55px 24px 42px;
   text-align:center;
+  padding:65px 20px 55px;
 }
 
 .hero h1{
-  margin:0 0 10px;
-  font-size:34px;
-  letter-spacing:1px;
+  margin:0;
+  font-size:36px;
+  font-weight:700;
 }
 
 .hero p{
-  margin:0;
-  font-size:17px;
-  opacity:.92;
+  margin:18px 0 0;
+  font-size:19px;
 }
 
 .card{
   background:white;
-  margin:18px;
-  padding:24px;
-  border-radius:18px;
-  box-shadow:0 5px 18px rgba(0,0,0,.08);
+  margin:32px 20px;
+  padding:34px 28px;
+  border-radius:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-h2{
-  margin-top:0;
-  font-size:24px;
+.card h2{
+  margin:0 0 25px;
+  font-size:30px;
 }
 
 .service{
   display:flex;
   justify-content:space-between;
-  padding:14px 0;
+  gap:15px;
+  padding:18px 0;
   border-bottom:1px solid #eee;
-  font-size:16px;
+  font-size:18px;
 }
 
-.service:last-child{
-  border-bottom:0;
+.service:last-of-type{
+  border-bottom:none;
 }
 
-.note{
+.description{
+  color:#777;
   text-align:center;
-  font-size:14px;
-  color:#6b625d;
-  line-height:1.5;
+  line-height:1.6;
+  margin:25px 0 0;
 }
 
-.btn{
+.features{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.features li{
+  padding:12px 0;
+  font-size:18px;
+}
+
+.booking{
+  text-align:center;
+}
+
+.booking p{
+  color:#777;
+  line-height:1.6;
+}
+
+.book-btn{
   display:block;
   text-decoration:none;
-  text-align:center;
-  background:#2d2420;
+  background:#29231f;
   color:white;
-  padding:15px;
-  border-radius:12px;
+  padding:18px;
+  border-radius:18px;
+  font-size:19px;
   font-weight:bold;
-  margin-top:16px;
+  margin-top:25px;
+}
+
+.book-btn:active{
+  transform:scale(.98);
 }
 
 .footer{
   text-align:center;
-  padding:20px 15px 35px;
-  color:#746b65;
-  font-size:13px;
+  color:#777;
+  padding:10px 20px 40px;
+  font-size:15px;
 }
 </style>
 </head>
@@ -100,64 +123,66 @@ h2{
 
 <div class="container">
 
-<section class="hero">
-  <h1>@AYESHA_MANNUR</h1>
-  <p>Relax • Refresh • Rejuvenate</p>
-</section>
+  <section class="hero">
+    <h1>@AYESHA_MANNUR</h1>
+    <p>Relax • Refresh • Rejuvenate</p>
+  </section>
 
-<section class="card">
-  <h2>Our Services</h2>
+  <section class="card">
+    <h2>Our Services</h2>
 
-  <div class="service">
-    <span>Relaxing Massage</span>
-    <span>1 Hour</span>
+    <div class="service">
+      <span>Relaxing Massage</span>
+      <span>1 Hour</span>
+    </div>
+
+    <div class="service">
+      <span>Premium Massage</span>
+      <span>2 Hours</span>
+    </div>
+
+    <div class="service">
+      <span>Extended Relaxation</span>
+      <span>3 Hours</span>
+    </div>
+
+    <p class="description">
+      Professional wellness and relaxation services
+      in a comfortable setting.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Why Choose Us?</h2>
+
+    <ul class="features">
+      <li>✓ Clean & comfortable environment</li>
+      <li>✓ Relaxing atmosphere</li>
+      <li>✓ Professional service</li>
+      <li>✓ Easy appointment booking</li>
+    </ul>
+  </section>
+
+  <section class="card booking">
+    <h2>Book an Appointment</h2>
+
+    <p>
+      For appointment details, please contact us
+      through our official booking channel.
+    </p>
+
+    <a
+      class="book-btn"
+      href="https://t.me/AYESHA_MANNUR"
+      target="_blank"
+      rel="noopener noreferrer">
+      Contact / Book Now
+    </a>
+  </section>
+
+  <div class="footer">
+    © 2026 @AYESHA_MANNUR
   </div>
-
-  <div class="service">
-    <span>Premium Massage</span>
-    <span>2 Hours</span>
-  </div>
-
-  <div class="service">
-    <span>Extended Relaxation</span>
-    <span>3 Hours</span>
-  </div>
-
-  <p class="note">
-    Professional wellness and relaxation services
-    in a comfortable setting.
-  </p>
-</section>
-
-<section class="card">
-  <h2>Why Choose Us?</h2>
-
-  <p>✓ Clean & comfortable environment</p>
-  <p>✓ Relaxing atmosphere</p>
-  <p>✓ Professional service</p>
-  <p>✓ Easy appointment booking</p>
-</section>
-
-<section class="card">
-  <h2>Book an Appointment</h2>
-
-  <p class="note">
-    For appointment details, please contact us
-    through our official Telegram channel.
-  </p>
-
-  <a
-    class="btn"
-    href="https://t.me/AYESHA_MANNUR"
-    target="_blank"
-    rel="noopener noreferrer">
-    Contact / Book Now
-  </a>
-</section>
-
-<div class="footer">
-  © 2026 @AYESHA_MANNUR
-</div>
 
 </div>
 
