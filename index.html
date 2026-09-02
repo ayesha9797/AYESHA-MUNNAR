@@ -21,100 +21,115 @@ body{
 .container{
   max-width:480px;
   margin:auto;
+  padding:15px;
 }
 
+/* Hero */
 .hero{
-  background:#4b382f;
+  background:#5a463c;
   color:white;
+  padding:35px 20px;
+  border-radius:22px;
   text-align:center;
-  padding:65px 20px 55px;
+  margin-bottom:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.12);
 }
 
 .hero h1{
-  margin:0;
-  font-size:36px;
-  font-weight:700;
+  margin:0 0 10px;
+  font-size:32px;
+  letter-spacing:1px;
 }
 
 .hero p{
-  margin:18px 0 0;
-  font-size:19px;
+  margin:0;
+  font-size:16px;
+  opacity:0.95;
 }
 
+/* Cards */
 .card{
   background:white;
-  margin:32px 20px;
-  padding:34px 28px;
-  border-radius:28px;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  padding:22px;
+  margin-bottom:18px;
+  border-radius:20px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
 
 .card h2{
-  margin:0 0 25px;
-  font-size:30px;
+  margin-top:0;
+  margin-bottom:18px;
+  font-size:24px;
+  text-align:center;
 }
 
+/* Services */
 .service{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  padding:18px 0;
   border-bottom:1px solid #eee;
-  font-size:18px;
+  padding:15px 0;
 }
 
-.service:last-of-type{
+.service:last-child{
   border-bottom:none;
 }
 
-.description{
-  color:#777;
-  text-align:center;
-  line-height:1.6;
-  margin:25px 0 0;
-}
-
-.features{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.features li{
-  padding:12px 0;
+.service h3{
+  margin:0 0 6px;
   font-size:18px;
 }
 
-.booking{
+.service p{
+  margin:0;
+  color:#6b625d;
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* Why choose */
+.why{
+  padding:9px 0;
+  font-size:16px;
+}
+
+.why span{
+  margin-right:8px;
+}
+
+/* Booking */
+.booking-text{
   text-align:center;
-}
-
-.booking p{
-  color:#777;
+  color:#6b625d;
   line-height:1.6;
+  font-size:15px;
 }
 
+/* Telegram Button */
 .book-btn{
   display:block;
-  text-decoration:none;
+  width:100%;
   background:#29231f;
   color:white;
   padding:18px;
+  margin-top:18px;
   border-radius:18px;
+  text-align:center;
+  text-decoration:none;
   font-size:19px;
   font-weight:bold;
-  margin-top:25px;
+  border:none;
+  cursor:pointer;
 }
 
 .book-btn:active{
-  transform:scale(.98);
+  transform:scale(0.98);
 }
 
+/* Footer */
 .footer{
   text-align:center;
+  padding:10px 0 20px;
   color:#777;
-  padding:10px 20px 40px;
-  font-size:15px;
+  font-size:13px;
 }
 </style>
 </head>
@@ -123,68 +138,58 @@ body{
 
 <div class="container">
 
-  <section class="hero">
+  <!-- Hero -->
+  <div class="hero">
     <h1>@AYESHA_MANNUR</h1>
     <p>Relax • Refresh • Rejuvenate</p>
-  </section>
+  </div>
 
-  <section class="card">
+  <!-- Services -->
+  <div class="card">
     <h2>Our Services</h2>
 
     <div class="service">
-      <span>Relaxing Massage</span>
-      <span>1 Hour</span>
+      <h3>Relaxing Massage — 1 Hour</h3>
+      <p>Enjoy a calm and relaxing wellness experience.</p>
     </div>
 
     <div class="service">
-      <span>Premium Massage</span>
-      <span>2 Hours</span>
+      <h3>Premium Massage — 2 Hours</h3>
+      <p>Extended relaxation in a comfortable environment.</p>
     </div>
 
     <div class="service">
-      <span>Extended Relaxation</span>
-      <span>3 Hours</span>
+      <h3>Extended Relaxation — 3 Hours</h3>
+      <p>Take more time to relax and refresh.</p>
     </div>
 
-    <p class="description">
-      Professional wellness and relaxation services
-      in a comfortable setting.
-    </p>
-  </section>
+    <div class="service">
+      <h3>Professional Wellness Service</h3>
+      <p>Professional wellness and relaxation services in a comfortable setting.</p>
+    </div>
 
-  <section class="card">
-    <h2>Why Choose Us?</h2>
-
-    <ul class="features">
-      <li>✓ Clean & comfortable environment</li>
-      <li>✓ Relaxing atmosphere</li>
-      <li>✓ Professional service</li>
-      <li>✓ Easy appointment booking</li>
-    </ul>
-  </section>
-
-  <section class="card booking">
-    <h2>Book an Appointment</h2>
-
-    <p>
-      For appointment details, please contact us
-      through our official booking channel.
-    </p>
-
-    <a
-      class="book-btn"
-      href="https://t.me/AYESHA_MANNUR"
-      target="_blank"
-      rel="noopener noreferrer">
-      Contact / Book Now
-    </a>
-  </section>
-
-  <div class="footer">
-    © 2026 @AYESHA_MANNUR
   </div>
 
-</div>
+  <!-- Why Choose Us -->
+  <div class="card">
+    <h2>Why Choose Us?</h2>
 
-</body>
-</html>
+    <div class="why">
+      <span>✓</span> Clean & comfortable environment
+    </div>
+
+    <div class="why">
+      <span>✓</span> Relaxing atmosphere
+    </div>
+
+    <div class="why">
+      <span>✓</span> Professional service
+    </div>
+
+    <div class="why">
+      <span>✓</span> Easy appointment booking
+    </div>
+  </div>
+
+  <!-- Booking -->
+ 
