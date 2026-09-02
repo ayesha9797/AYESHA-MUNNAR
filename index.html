@@ -1,65 +1,97 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deepti Spa</title>
+
+<title>@AYESHA_MANNUR</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   font-family:Arial,sans-serif;
   background:#f5f1ec;
   color:#29231f;
 }
+
 .container{
   max-width:480px;
   margin:auto;
-  padding:60px 20px;
+  min-height:100vh;
+}
+
+.hero{
+  background:linear-gradient(135deg,#2d2420,#6f5547);
+  color:white;
+  padding:55px 24px 42px;
   text-align:center;
 }
+
+.hero h1{
+  margin:0 0 10px;
+  font-size:34px;
+  letter-spacing:1px;
+}
+
+.hero p{
+  margin:0;
+  font-size:17px;
+  opacity:.92;
+}
+
 .card{
   background:white;
-  padding:40px 25px;
-  border-radius:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,.12);
+  margin:18px;
+  padding:24px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
-.logo{
-  width:85px;
-  height:85px;
-  margin:auto;
-  border-radius:50%;
-  background:#29231f;
-  color:white;
+
+h2{
+  margin-top:0;
+  font-size:24px;
+}
+
+.service{
   display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:28px;
-  font-weight:bold;
+  justify-content:space-between;
+  padding:14px 0;
+  border-bottom:1px solid #eee;
+  font-size:16px;
 }
-h1{
-  font-size:36px;
-  margin:20px 0 10px;
+
+.service:last-child{
+  border-bottom:0;
 }
-p{
-  color:#666;
-  line-height:1.6;
-}
-.button{
-  display:block;
-  margin-top:30px;
-  padding:16px;
-  background:#229ed9;
-  color:white;
-  text-decoration:none;
-  border-radius:14px;
-  font-size:18px;
-  font-weight:bold;
-}
-.username{
-  margin-top:18px;
-  color:#888;
+
+.note{
+  text-align:center;
   font-size:14px;
+  color:#6b625d;
+  line-height:1.5;
+}
+
+.btn{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  background:#2d2420;
+  color:white;
+  padding:15px;
+  border-radius:12px;
+  font-weight:bold;
+  margin-top:16px;
+}
+
+.footer{
+  text-align:center;
+  padding:20px 15px 35px;
+  color:#746b65;
+  font-size:13px;
 }
 </style>
 </head>
@@ -67,29 +99,62 @@ p{
 <body>
 
 <div class="container">
-  <div class="card">
 
-    <div class="logo">DS</div>
+<section class="hero">
+  <h1>@AYESHA_MANNUR</h1>
+  <p>Relax • Refresh • Rejuvenate</p>
+</section>
 
-    <h1>Deepti Spa</h1>
+<section class="card">
+  <h2>Our Services</h2>
 
-    <p>
-      Welcome to Deepti Spa.<br>
-      For information and appointments,
-      contact us on Telegram.
-    </p>
-
-    <a class="button"
-       href="https://t.me/Deepti_reddy_56"
-       target="_blank">
-       Contact on Telegram
-    </a>
-
-    <div class="username">
-      @Deepti_reddy_56
-    </div>
-
+  <div class="service">
+    <span>Relaxing Massage</span>
+    <span>1 Hour</span>
   </div>
+
+  <div class="service">
+    <span>Premium Massage</span>
+    <span>2 Hours</span>
+  </div>
+
+  <div class="service">
+    <span>Extended Relaxation</span>
+    <span>3 Hours</span>
+  </div>
+
+  <p class="note">
+    Professional wellness and relaxation services
+    in a comfortable setting.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Why Choose Us?</h2>
+
+  <p>✓ Clean & comfortable environment</p>
+  <p>✓ Relaxing atmosphere</p>
+  <p>✓ Professional service</p>
+  <p>✓ Easy appointment booking</p>
+</section>
+
+<section class="card">
+  <h2>Book an Appointment</h2>
+
+  <p class="note">
+    For appointment details, please contact us
+    through your official booking channel.
+  </p>
+
+  <a class="btn" href="#contact">
+    Contact / Book Now
+  </a>
+</section>
+
+<div class="footer" id="contact">
+  © 2026 @AYESHA_MANNUR
+</div>
+
 </div>
 
 </body>
