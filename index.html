@@ -15,125 +15,170 @@ html,body{
   margin:0;
   padding:0;
   min-height:100%;
+  font-family:Arial,sans-serif;
 }
 
 body{
-  font-family:Arial,sans-serif;
   color:#fff;
 
-  /* ONLY BACKGROUND CHANGED */
-  background:
-    radial-gradient(circle at 50% 15%, rgba(103,76,35,.28), transparent 35%),
-    radial-gradient(circle at 15% 75%, rgba(65,48,25,.22), transparent 35%),
-    radial-gradient(circle at 90% 65%, rgba(70,52,25,.18), transparent 35%),
-    linear-gradient(135deg,#050505 0%,#11100d 45%,#050505 100%);
+  /* BACKGROUND PHOTO */
+  background-image:
+    linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.70)),
+    url("spa-bg.jpg");
 
+  background-size:cover;
+  background-position:center;
   background-attachment:fixed;
 }
 
 /* MAIN */
 .container{
+  width:100%;
   max-width:480px;
   min-height:100vh;
   margin:auto;
-  padding:26px 18px 32px;
+  padding:25px 18px 35px;
 }
 
-/* HEADER */
+/* TOP LABEL */
+.label{
+  width:max-content;
+  max-width:100%;
+  margin:0 auto 20px;
+
+  padding:9px 20px;
+  border-radius:30px;
+
+  background:rgba(25,25,25,.65);
+  border:1px solid rgba(220,180,90,.55);
+
+  color:#f4d58c;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+/* TITLE */
 .header{
   text-align:center;
-  padding:10px 5px 25px;
+  margin-bottom:25px;
 }
 
 .header h1{
   margin:0;
-  font-size:29px;
-  font-weight:700;
+
+  font-family:Georgia,serif;
+  font-size:36px;
+  line-height:1.1;
+
   color:#fff;
+  text-shadow:0 3px 12px #000;
 }
 
 .header p{
-  margin:8px 0 0;
+  margin:10px 0 0;
+
   font-size:14px;
-  color:#aaa;
+  color:#eee;
+  letter-spacing:.5px;
 }
 
-/* TELEGRAM CARD */
-.telegram-box{
-  background:#111;
-  border:1px solid #252525;
+/* CONTACT CARD */
+.contact-card{
+  background:rgba(0,0,0,.62);
+
+  border:1px solid rgba(255,255,255,.18);
   border-radius:25px;
+
   padding:28px 18px 30px;
+
   text-align:center;
-  box-shadow:0 10px 30px rgba(0,0,0,.75);
+
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+
+  box-shadow:0 12px 35px rgba(0,0,0,.55);
 }
 
-/* TELEGRAM ICON */
+/* TELEGRAM */
 .telegram-icon{
-  width:68px;
-  height:68px;
+  width:62px;
+  height:62px;
+
+  margin:0 auto 13px;
+
   border-radius:50%;
-  margin:0 auto 16px;
+
   background:#229ED9;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  font-size:31px;
-  color:white;
+  font-size:29px;
 
-  box-shadow:0 5px 20px rgba(34,158,217,.25);
+  box-shadow:0 5px 20px rgba(34,158,217,.35);
 }
 
-.telegram-box h2{
+.contact-card h2{
   margin:0;
+
   font-size:23px;
   color:#fff;
 }
 
-.telegram-box p{
+.contact-card p{
   margin:8px 0 19px;
+
+  color:#d0d0d0;
   font-size:14px;
-  color:#999;
 }
 
-/* CLICK HERE */
-.click{
+/* BUTTON */
+.telegram-btn{
   display:inline-block;
-  padding:14px 32px;
+
+  padding:14px 30px;
+
+  border-radius:35px;
+
   background:#229ED9;
-  color:white;
+  color:#fff;
+
   text-decoration:none;
-  border-radius:30px;
+
   font-size:15px;
   font-weight:bold;
-  box-shadow:0 6px 18px rgba(34,158,217,.28);
+
+  box-shadow:0 5px 18px rgba(34,158,217,.35);
 }
 
-.click:active{
-  transform:scale(.97);
+.telegram-btn:active{
+  transform:scale(.96);
 }
 
 /* SERVICES */
 .services-title{
   text-align:center;
-  margin:30px 0 17px;
-  font-size:23px;
-  color:#fff;
+
+  margin:30px 0 16px;
+
+  font-family:Georgia,serif;
+  font-size:24px;
+
+  text-shadow:0 3px 10px #000;
 }
 
 .services{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:13px;
+  gap:12px;
 }
 
 .service{
-  min-height:128px;
-  background:#111;
-  border:1px solid #252525;
-  border-radius:20px;
+  min-height:115px;
+
+  padding:15px 8px;
 
   display:flex;
   flex-direction:column;
@@ -142,25 +187,37 @@ body{
 
   text-align:center;
 
-  box-shadow:0 8px 24px rgba(0,0,0,.65);
+  background:rgba(0,0,0,.62);
+
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:20px;
+
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+
+  box-shadow:0 8px 25px rgba(0,0,0,.45);
 }
 
 .service span{
-  font-size:29px;
-  margin-bottom:10px;
+  font-size:28px;
+  margin-bottom:9px;
 }
 
 .service strong{
-  font-size:14px;
   color:#fff;
+  font-size:14px;
 }
 
 /* FOOTER */
-.bottom{
+.footer{
   text-align:center;
-  margin-top:27px;
-  color:#777;
+
+  margin-top:24px;
+
+  color:#ddd;
   font-size:12px;
+
+  text-shadow:0 2px 7px #000;
 }
 
 /* MOBILE */
@@ -172,19 +229,11 @@ body{
   }
 
   .header h1{
-    font-size:26px;
+    font-size:31px;
   }
 
-  .telegram-box{
-    padding:25px 14px 28px;
-  }
-
-  .services{
-    gap:10px;
-  }
-
-  .service{
-    min-height:120px;
+  .label{
+    font-size:11px;
   }
 }
 </style>
@@ -194,12 +243,17 @@ body{
 
 <div class="container">
 
+  <div class="label">
+    ✦ PREMIUM SPA & WELLNESS
+  </div>
+
   <div class="header">
-    <h1>Ayesha Spa & Wellness</h1>
+    <h1>Ayesha Spa<br>& Wellness</h1>
     <p>Relax • Refresh • Rejuvenate</p>
   </div>
 
-  <div class="telegram-box">
+
+  <div class="contact-card">
 
     <div class="telegram-icon">✈</div>
 
@@ -208,7 +262,7 @@ body{
     <p>For appointment & booking</p>
 
     <a
-      class="click"
+      class="telegram-btn"
       href="https://t.me/AYESHA_MANNUR"
       target="_blank"
       rel="noopener">
@@ -217,7 +271,11 @@ body{
 
   </div>
 
-  <h2 class="services-title">Our Services</h2>
+
+  <h2 class="services-title">
+    Our Services
+  </h2>
+
 
   <div class="services">
 
@@ -243,7 +301,8 @@ body{
 
   </div>
 
-  <div class="bottom">
+
+  <div class="footer">
     Appointment required • Contact us on Telegram
   </div>
 
