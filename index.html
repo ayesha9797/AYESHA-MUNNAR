@@ -11,13 +11,27 @@
   box-sizing:border-box;
 }
 
-body{
+html,body{
   margin:0;
-  font-family:Arial,sans-serif;
-  background:#050505;
-  color:#fff;
+  padding:0;
+  min-height:100%;
 }
 
+body{
+  font-family:Arial,sans-serif;
+  color:#fff;
+
+  /* ONLY BACKGROUND CHANGED */
+  background:
+    radial-gradient(circle at 50% 15%, rgba(103,76,35,.28), transparent 35%),
+    radial-gradient(circle at 15% 75%, rgba(65,48,25,.22), transparent 35%),
+    radial-gradient(circle at 90% 65%, rgba(70,52,25,.18), transparent 35%),
+    linear-gradient(135deg,#050505 0%,#11100d 45%,#050505 100%);
+
+  background-attachment:fixed;
+}
+
+/* MAIN */
 .container{
   max-width:480px;
   min-height:100vh;
