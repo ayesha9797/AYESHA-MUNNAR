@@ -14,113 +14,164 @@
 body{
   margin:0;
   font-family:Arial,sans-serif;
-  background:#f5f1ec;
-  color:#29231f;
+  background:#050505;
+  color:#fff;
 }
 
 .container{
   max-width:480px;
-  margin:auto;
   min-height:100vh;
-  padding:25px 18px 35px;
+  margin:auto;
+  padding:26px 18px 32px;
 }
 
+/* HEADER */
 .header{
   text-align:center;
-  padding:15px 10px 20px;
+  padding:10px 5px 25px;
 }
 
 .header h1{
   margin:0;
-  font-size:28px;
-  letter-spacing:.5px;
+  font-size:29px;
+  font-weight:700;
+  color:#fff;
 }
 
 .header p{
-  margin:7px 0 0;
-  color:#756b63;
+  margin:8px 0 0;
   font-size:14px;
+  color:#aaa;
 }
 
+/* TELEGRAM CARD */
 .telegram-box{
-  background:white;
-  border-radius:20px;
-  padding:22px 18px;
+  background:#111;
+  border:1px solid #252525;
+  border-radius:25px;
+  padding:28px 18px 30px;
   text-align:center;
-  box-shadow:0 5px 20px rgba(0,0,0,.08);
-  margin-bottom:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.75);
 }
 
+/* TELEGRAM ICON */
 .telegram-icon{
-  width:58px;
-  height:58px;
+  width:68px;
+  height:68px;
   border-radius:50%;
-  margin:0 auto 12px;
+  margin:0 auto 16px;
+  background:#229ED9;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#229ED9;
+
+  font-size:31px;
   color:white;
-  font-size:28px;
-  font-weight:bold;
+
+  box-shadow:0 5px 20px rgba(34,158,217,.25);
 }
 
 .telegram-box h2{
-  margin:5px 0 6px;
-  font-size:21px;
+  margin:0;
+  font-size:23px;
+  color:#fff;
 }
 
 .telegram-box p{
-  margin:0 0 15px;
-  color:#777;
+  margin:8px 0 19px;
   font-size:14px;
+  color:#999;
 }
 
+/* CLICK HERE */
 .click{
   display:inline-block;
-  text-decoration:none;
+  padding:14px 32px;
   background:#229ED9;
   color:white;
-  padding:13px 25px;
+  text-decoration:none;
   border-radius:30px;
   font-size:15px;
   font-weight:bold;
-  box-shadow:0 4px 12px rgba(34,158,217,.25);
+  box-shadow:0 6px 18px rgba(34,158,217,.28);
 }
 
+.click:active{
+  transform:scale(.97);
+}
+
+/* SERVICES */
 .services-title{
   text-align:center;
-  margin:25px 0 14px;
-  font-size:22px;
+  margin:30px 0 17px;
+  font-size:23px;
+  color:#fff;
 }
 
 .services{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:12px;
+  gap:13px;
 }
 
 .service{
-  background:white;
-  border-radius:15px;
-  padding:17px 10px;
+  min-height:128px;
+  background:#111;
+  border:1px solid #252525;
+  border-radius:20px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
   text-align:center;
-  box-shadow:0 4px 14px rgba(0,0,0,.06);
-  font-size:14px;
-  font-weight:bold;
+
+  box-shadow:0 8px 24px rgba(0,0,0,.65);
 }
 
 .service span{
-  display:block;
-  font-size:25px;
-  margin-bottom:7px;
+  font-size:29px;
+  margin-bottom:10px;
 }
 
+.service strong{
+  font-size:14px;
+  color:#fff;
+}
+
+/* FOOTER */
 .bottom{
   text-align:center;
-  margin-top:25px;
-  color:#81776f;
+  margin-top:27px;
+  color:#777;
   font-size:12px;
+}
+
+/* MOBILE */
+@media(max-width:360px){
+
+  .container{
+    padding-left:14px;
+    padding-right:14px;
+  }
+
+  .header h1{
+    font-size:26px;
+  }
+
+  .telegram-box{
+    padding:25px 14px 28px;
+  }
+
+  .services{
+    gap:10px;
+  }
+
+  .service{
+    min-height:120px;
+  }
 }
 </style>
 </head>
@@ -142,10 +193,12 @@ body{
 
     <p>For appointment & booking</p>
 
-    <a class="click"
-       href="https://t.me/AYESHA_MANNUR"
-       target="_blank">
-       CLICK HERE
+    <a
+      class="click"
+      href="https://t.me/AYESHA_MANNUR"
+      target="_blank"
+      rel="noopener">
+      CLICK HERE
     </a>
 
   </div>
@@ -156,22 +209,22 @@ body{
 
     <div class="service">
       <span>💆</span>
-      Relaxing Massage
+      <strong>Relaxing Massage</strong>
     </div>
 
     <div class="service">
       <span>🌿</span>
-      Wellness Massage
+      <strong>Wellness Massage</strong>
     </div>
 
     <div class="service">
       <span>✨</span>
-      Aromatherapy
+      <strong>Aromatherapy</strong>
     </div>
 
     <div class="service">
       <span>🧖</span>
-      Spa Treatment
+      <strong>Spa Treatment</strong>
     </div>
 
   </div>
