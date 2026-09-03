@@ -1,189 +1,385 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>@AYESHA_MANNUR</title><style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ayesha Spa & Wellness</title>
+
+<style>
 *{
   box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#f5f1ec;
-  color:#29231f;
-}
-
-.container{
-  max-width:480px;
-  margin:auto;
-  padding:15px;
-}
-
-/* Hero */
-.hero{
-  background:#5a463c;
+  font-family:Arial, sans-serif;
+  background:#120c07;
   color:white;
-  padding:30px 20px;
-  border-radius:22px;
-  text-align:center;
-  margin-bottom:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.12);
 }
 
-.hero h1{
-  margin:0 0 8px;
-  font-size:30px;
+.page{
+  width:100%;
+  max-width:520px;
+  margin:auto;
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(20,12,7,.70),rgba(20,12,7,.92)),
+    url("spa-bg.jpg");
+  background-size:cover;
+  background-position:center;
+  padding:28px 18px 35px;
+}
+
+/* LOGO */
+.logo{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.logo-icon{
+  font-size:48px;
+  color:#e6ae3b;
+}
+
+.logo h1{
+  font-family:Georgia,serif;
+  font-size:48px;
+  color:#e5ad38;
   letter-spacing:1px;
 }
 
-.hero p{
-  margin:0;
-  font-size:16px;
-  opacity:0.95;
+.logo h2{
+  font-family:Georgia,serif;
+  font-size:22px;
+  color:#e5ad38;
+  margin-top:-5px;
 }
 
-/* Book Area */
-.book-area{
+.tagline{
   text-align:center;
-  margin:0 0 14px;
+  margin-top:18px;
 }
 
-.tap-text{
-  font-size:14px;
-  font-weight:bold;
-  color:#5a463c;
-  margin-bottom:7px;
+.tagline h3{
+  font-family:Georgia,serif;
+  font-size:30px;
+  line-height:1.2;
 }
 
-/* Book Button */
-.book-btn{
-  display:block;
-  width:100%;
-  background:#229ED9;
-  color:white;
-  padding:15px;
-  border-radius:16px;
+.tagline p{
+  color:#e8b84e;
+  font-size:19px;
+  margin-top:8px;
+}
+
+/* DESCRIPTION */
+.description{
   text-align:center;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:bold;
-  box-shadow:0 4px 10px rgba(0,0,0,0.12);
-}
-
-.book-btn:active{
-  transform:scale(0.98);
-}
-
-/* Cards */
-.card{
-  background:white;
-  padding:22px;
-  margin-bottom:18px;
-  border-radius:20px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.08);
-}
-
-.card h2{
-  margin-top:0;
-  margin-bottom:18px;
-  font-size:24px;
-  text-align:center;
-}
-
-/* Services */
-.service{
-  border-bottom:1px solid #eee;
-  padding:15px 0;
-}
-
-.service:last-child{
-  border-bottom:none;
-}
-
-.service h3{
-  margin:0 0 6px;
-  font-size:18px;
-}
-
-.service p{
-  margin:0;
-  color:#6b625d;
-  font-size:14px;
+  margin:22px 10px;
+  font-size:17px;
   line-height:1.5;
 }
 
-/* Why Choose */
-.why{
-  padding:9px 0;
-  font-size:16px;
+/* DP */
+.profile{
+  display:flex;
+  justify-content:center;
+  margin:15px 0 8px;
 }
 
-.why span{
-  margin-right:8px;
+.profile img{
+  width:175px;
+  height:175px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #e6b43f;
+  box-shadow:0 0 25px rgba(226,171,50,.45);
 }
 
-/* Footer */
-.footer{
+/* TELEGRAM USERNAME */
+.username{
+  border:1px solid #d99f2b;
+  border-radius:30px;
+  padding:16px 18px;
   text-align:center;
-  padding:10px 0 20px;
-  color:#777;
+  margin:12px 8px;
+  background:rgba(0,0,0,.65);
+}
+
+.username a{
+  color:#e9b63e;
+  text-decoration:none;
+  font-size:21px;
+  font-weight:bold;
+}
+
+.username span{
+  display:block;
+  color:#eee;
+  font-size:14px;
+  margin-top:4px;
+}
+
+/* BUTTONS */
+.btn{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  padding:17px 15px;
+  border-radius:30px;
+  margin:13px 8px;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.book{
+  background:linear-gradient(#e9b83f,#b97810);
+  color:white;
+  box-shadow:0 5px 18px rgba(224,166,42,.25);
+}
+
+.telegram{
+  background:#101010;
+  color:white;
+  border:1px solid #dba52e;
+}
+
+.click{
+  background:#101010;
+  color:white;
+  border:1px solid #dba52e;
+}
+
+.btn small{
+  display:block;
+  font-size:13px;
+  margin-top:4px;
+  font-weight:normal;
+}
+
+/* SERVICES */
+.section-title{
+  text-align:center;
+  margin:30px 0 18px;
+  color:#e6b03b;
+  font-family:Georgia,serif;
+  font-size:25px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.service{
+  background:rgba(0,0,0,.68);
+  border:1px solid #b87f1e;
+  border-radius:14px;
+  padding:18px 10px;
+  text-align:center;
+}
+
+.service .icon{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.service h4{
+  color:#e8b33d;
+  font-size:16px;
+  margin-bottom:7px;
+}
+
+.service p{
+  font-size:13px;
+  color:#ddd;
+  line-height:1.4;
+}
+
+/* TRUST */
+.trust{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:25px;
+}
+
+.trust-box{
+  text-align:center;
+  padding:13px 5px;
+  color:#ddd;
   font-size:13px;
 }
 
-</style></head><body><div class="container">  <!-- Hero -->  <div class="hero">
-    <h1>@AYESHA_MANNUR</h1>
-    <p>Relax • Refresh • Rejuvenate</p>
-  </div>  <!-- Book Now -->  <div class="book-area"><div class="tap-text">
-  👇 New Customer? Tap Here to Book 👇
+.trust-icon{
+  color:#e5ad38;
+  font-size:27px;
+  margin-bottom:5px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  margin-top:25px;
+  color:#aaa;
+  font-size:12px;
+}
+
+@media(max-width:380px){
+  .logo h1{
+    font-size:40px;
+  }
+
+  .tagline h3{
+    font-size:26px;
+  }
+
+  .username a{
+    font-size:18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <div class="logo-icon">✾</div>
+    <h1>Ayesha</h1>
+    <h2>SPA & WELLNESS</h2>
+  </div>
+
+  <!-- TAGLINE -->
+  <div class="tagline">
+    <h3>Relax. Refresh.<br>Rejuvenate.</h3>
+    <p>Escape the Stress, Embrace Wellness.</p>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="description">
+    Book your Ayesha Spa service and enjoy
+    a relaxing and peaceful wellness experience.
+  </div>
+
+  <!-- TELEGRAM DP -->
+  <div class="profile">
+    <img src="ayesha-dp.jpg" alt="Ayesha Spa">
+  </div>
+
+  <!-- TELEGRAM USERNAME -->
+  <div class="username">
+    <a href="https://t.me/AYESHA_MANNUR" target="_blank">
+      ✈ t.me/AYESHA_MANNUR
+    </a>
+    <span>Telegram Username</span>
+  </div>
+
+  <!-- BOOK NOW -->
+  <a class="btn book"
+     href="https://t.me/AYESHA_MANNUR"
+     target="_blank">
+    📅 BOOK NOW
+    <small>APPOINTMENT NOW</small>
+  </a>
+
+  <!-- CONTACT TELEGRAM -->
+  <a class="btn telegram"
+     href="https://t.me/AYESHA_MANNUR"
+     target="_blank">
+    ✈ CONTACT TELEGRAM
+    <small>Chat with us</small>
+  </a>
+
+  <!-- CLICK HERE -->
+  <a class="btn click"
+     href="https://t.me/AYESHA_MANNUR"
+     target="_blank">
+    ☝ CELEC HERE
+    <small>Telegram Username</small>
+  </a>
+
+  <!-- SERVICES -->
+  <div class="section-title">
+    ✦ MASSAGE SERVICES ✦
+  </div>
+
+  <div class="services">
+
+    <div class="service">
+      <div class="icon">🌿</div>
+      <h4>SWEDISH MASSAGE</h4>
+      <p>Gentle relaxing massage for complete relaxation.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">💆</div>
+      <h4>DEEP TISSUE</h4>
+      <p>Focused massage to relax tired muscles.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">🌸</div>
+      <h4>AROMATHERAPY</h4>
+      <p>Essential oils with a calming wellness experience.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">🪨</div>
+      <h4>HOT STONE</h4>
+      <p>Warm stones for a soothing spa experience.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">💆‍♀️</div>
+      <h4>HEAD & NECK</h4>
+      <p>Relaxing care for head, neck and shoulders.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">✨</div>
+      <h4>WELLNESS SPA</h4>
+      <p>Enjoy a peaceful and refreshing wellness session.</p>
+    </div>
+
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust">
+
+    <div class="trust-box">
+      <div class="trust-icon">★</div>
+      Premium Service
+    </div>
+
+    <div class="trust-box">
+      <div class="trust-icon">♙</div>
+      Professional Care
+    </div>
+
+    <div class="trust-box">
+      <div class="trust-icon">✓</div>
+      Quality Service
+    </div>
+
+    <div class="trust-box">
+      <div class="trust-icon">⚡</div>
+      Quick Response
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Ayesha Spa & Wellness<br>
+    Appointment & enquiries via Telegram
+  </div>
+
 </div>
 
-<a
-  href="https://t.me/AYESHA_MANNUR"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="book-btn">
-  📲 BOOK NOW ON TELEGRAM
-</a>
-
-  </div>  <!-- Services -->  <div class="card">
-    <h2>Our Services</h2><div class="service">
-  <h3>Relaxing Massage — 1 Hour</h3>
-  <p>Enjoy a calm and relaxing wellness experience.</p>
-</div>
-
-<div class="service">
-  <h3>Premium Massage — 2 Hours</h3>
-  <p>Extended relaxation in a comfortable environment.</p>
-</div>
-
-<div class="service">
-  <h3>Extended Relaxation — 3 Hours</h3>
-  <p>Take more time to relax and refresh.</p>
-</div>
-
-<div class="service">
-  <h3>Professional Wellness Service</h3>
-  <p>Professional wellness and relaxation services in a comfortable setting.</p>
-</div>
-
-  </div>  <!-- Why Choose Us -->  <div class="card">
-    <h2>Why Choose Us?</h2><div class="why">
-  <span>✓</span> Clean & comfortable environment
-</div>
-
-<div class="why">
-  <span>✓</span> Relaxing atmosphere
-</div>
-
-<div class="why">
-  <span>✓</span> Professional service
-</div>
-
-<div class="why">
-  <span>✓</span> Easy appointment booking
-</div>
-
-  </div>  <!-- Footer -->  <div class="footer">
-    © 2026 @AYESHA_MANNUR
-  </div></div></body>
+</body>
 </html>
